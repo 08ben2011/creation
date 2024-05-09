@@ -1,0 +1,195 @@
+body {
+  display: box;
+  }
+  
+  .mainTitle {
+    font-family: 'great vibes';
+    font-size: 5rem;
+    color: #3b3600;
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: solid black;
+  }
+
+
+  
+  .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 30px;
+      justify-items: center;
+      margin-top: 100px;
+      z-index: 1;
+  }
+
+  .grid-container {
+    background-color: aqua;
+    width: 360px;
+height: 510px;
+
+}
+  
+  img {
+  height: 450px;
+  width: 360px;
+  object-fit: cover;
+  }
+  
+  .label p {
+  font-family: 'great vibes';
+  font-size: 2.7rem;
+  text-align: center;
+  margin: 0;
+  color: #02008c;
+  }
+  
+  .grid-container {
+      position: relative;
+    }
+    
+    .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .hover-img p {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .grid-container:hover .hover-img p {
+    opacity: 1;
+  }
+  
+  .hover-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 0, 108, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .grid-container:hover .hover-img::before {
+    opacity: 1;
+  }
+  
+  .hover-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* This is the vice styling */
+
+
+  .grid-container-vice {
+    background-color: rgb(233, 95, 95);
+    width: 360px;
+    height: 510px;
+    position: relative;
+  }
+  
+  .label-vice p {
+    font-family: 'great vibes';
+    font-size: 2.7rem;
+    text-align: center;
+    margin: 0;
+    color: #3f0000;
+  }
+  
+  .grid-container-vice .hover-img-vice {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .grid-container-vice:hover .hover-img-vice p {
+    opacity: 1;
+  }
+  
+  .grid-container-vice .hover-img-vice p {
+    font-family: 'great vibes';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 138, 4);
+    font-size: 3rem;
+    text-align: center;
+    opacity: 0;
+    
+  }
+  
+  .hover-img-vice::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(122, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+          }
+
+          .grid-container-vice .hover-p-vice {
+    
+            transition: opacity 0.5s ease-in-out;
+          }
+          .grid-container-vice:hover .hover-img-vice::before {
+            opacity: 1;
+          }
+          
+          .grid-container-vice .hover-img-vice img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            max-height: 100%;
+          }
+
+/* sloth transition */
+
+  .grid-container-vice .sloth::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(122, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 7s ease-in-out;
+  }
+  .grid-container-vice .lazy {
+    
+    transition: opacity 12s ease-in-out;
+  }
+  
+
+
+
+ 
