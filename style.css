@@ -7,11 +7,24 @@ body {
     font-size: 5rem;
     color: #3b3600;
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 10px;
+    
+  }
+
+  h3 {
+    font-family: 'great vibes';
+    font-size: 2rem;
+    text-align: center;
+    color:rgb(0, 78, 16);
     border-bottom: solid black;
+    padding-bottom: 50px;
   }
 
 
+
+
+
+/* container and grid */
   
   .container {
       display: grid;
@@ -29,6 +42,7 @@ height: 510px;
 
 }
   
+/* card container */
   img {
   height: 450px;
   width: 360px;
@@ -186,7 +200,7 @@ height: 510px;
   }
   .grid-container-vice .lazy {
     
-    transition: opacity 12s ease-in-out;
+    transition: opacity 10s ease-in-out;
   }
   
 
