@@ -13,8 +13,48 @@
   <body>
     <div class="main">
       <h1 class="mainTitle">Creation</h1>
+      <h3>
+        "In the beginning, God created heaven and earth..." &nbsp&nbspGenesis
+        1:1
+      </h3>
+      <nav>
+        <div id="filter">
+          <button
+            id="virtue"
+            class="virtues btn"
+            onclick="filterCreation('virtue')"
+          >
+            Virtues
+          </button>
+          <button id="vice" class="vices btn" onclick="filterCreation('vice')">
+            Vices
+          </button>
+
+          <button
+            id="birdsBirds"
+            class="birds btn"
+            onclick="filterCreation('bird')"
+          >
+            Birds
+          </button>
+          <button
+            id="mammalsMammals"
+            class="mammals btn"
+            onclick="filterCreation('mammal')"
+          >
+            Mammals
+          </button>
+          <button
+            id="allShow"
+            class="showAll btn"
+            onclick="filterCreation('all')"
+          >
+            Show All
+          </button>
+        </div>
+      </nav>
       <div class="container">
-        <div class="grid-container">
+        <div class="grid-container bird animals virtue">
           <div class="img">
             <img src="img/swan.jpg" alt="" />
           </div>
@@ -26,7 +66,7 @@
           </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container bird animals virtue">
           <div class="img">
             <img src="img/pigeon.jpg" alt="" />
           </div>
@@ -38,7 +78,7 @@
           </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container mammal animals virtue">
           <div class="img">
             <img src="img/meerkat.jpg" alt="" />
           </div>
@@ -50,7 +90,7 @@
           </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container bird animals virtue">
           <div class="img">
             <img src="img/apus-apus.jpg" alt="" />
           </div>
@@ -62,7 +102,7 @@
           </div>
         </div>
 
-        <div class="grid-container-vice vice">
+        <div class="grid-container-vice mammal vice animals">
           <div class="img">
             <img src="img/sloth.jpeg" alt="" />
           </div>
@@ -74,7 +114,7 @@
           </div>
         </div>
 
-        <div class="grid-container-vice vice">
+        <div class="grid-container-vice mammal vice animals">
           <div class="img">
             <img src="img/fox.jpeg" alt="" />
           </div>
@@ -86,7 +126,7 @@
           </div>
         </div>
 
-        <div class="grid-container-vice vice">
+        <div class="grid-container-vice mammal vice animals">
           <div class="img">
             <img src="img/pig.jpeg" alt="" />
           </div>
@@ -98,7 +138,7 @@
           </div>
         </div>
 
-        <div class="grid-container-vice vice">
+        <div class="grid-container-vice mammal vice animals">
           <div class="img">
             <img src="img/dog.jpeg" alt="" />
           </div>
@@ -110,7 +150,7 @@
           </div>
         </div>
 
-        <div class="grid-container-vice vice">
+        <div class="grid-container-vice mammal vice animals">
           <div class="img">
             <img src="img/hyena.jpeg" alt="" />
           </div>
@@ -122,7 +162,7 @@
           </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container animals virtue">
           <div class="img">
             <img src="img/sheep.jpeg" alt="" />
           </div>
@@ -134,7 +174,7 @@
           </div>
         </div>
 
-        <div class="grid-container-vice vice">
+        <div class="grid-container-vice bird animals vice">
           <div class="img">
             <img src="img/peacock.jpeg" alt="" />
           </div>
@@ -146,7 +186,7 @@
           </div>
         </div>
 
-        <div class="grid-container-vice vice">
+        <div class="grid-container-vice mammal animals vice">
           <div class="img">
             <img src="img/badger.jpeg" alt="" />
           </div>
@@ -158,7 +198,7 @@
           </div>
         </div>
 
-        <div class="grid-container-vice vice">
+        <div class="grid-container-vice bird animals vice">
           <div class="img">
             <img src="img/macaw.jpeg" alt="" />
           </div>
@@ -170,7 +210,7 @@
           </div>
         </div>
 
-        <div class="grid-container-vice vice">
+        <div class="grid-container-vice mammal animals vice">
           <div class="img">
             <img src="img/panda.jpeg" alt="" />
           </div>
@@ -182,7 +222,7 @@
           </div>
         </div>
 
-        <div class="grid-container-vice vice">
+        <div class="grid-container-vice bird animals vice">
           <div class="img">
             <img src="img/ostrich.jpeg" alt="" />
           </div>
@@ -194,7 +234,7 @@
           </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container bird animals virtue">
           <div class="img">
             <img src="img/nightingale.jpeg" alt="" />
           </div>
@@ -206,7 +246,7 @@
           </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container bird animals virtue">
           <div class="img">
             <img src="img/crow.jpeg" alt="" />
           </div>
@@ -218,7 +258,7 @@
           </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container mammal animals virtue">
           <div class="img">
             <img src="img/horse.jpeg" alt="" />
           </div>
@@ -230,7 +270,7 @@
           </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container bird animals virtue">
           <div class="img">
             <img src="img/weaver-bird.jpeg" alt="" />
           </div>
@@ -242,7 +282,7 @@
           </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container bird animals virtue">
           <div class="img">
             <img src="img/eagle.jpeg" alt="" />
           </div>
@@ -255,5 +295,14 @@
         </div>
       </div>
     </div>
+
+    <footer>
+      <p></p>
+    </footer>
+    <p class="footer">
+      "But ask now the beasts, and they shall teach thee; and the fowls of the
+      air, and they shall tell thee" &nbsp&nbsp Job 12:7
+    </p>
+    <script src="script.js"></script>
   </body>
 </html>

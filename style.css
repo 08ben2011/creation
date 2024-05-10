@@ -1,3 +1,7 @@
+html {
+  background-color: #edf7fa;
+}
+
 body {
   display: box;
   }
@@ -11,17 +15,136 @@ body {
     
   }
 
-  h3 {
+  h3, .footer{
     font-family: 'great vibes';
     font-size: 2rem;
     text-align: center;
     color:rgb(0, 78, 16);
     border-bottom: solid black;
     padding-bottom: 50px;
-  }
+      }
+
+.footer {
+  border-bottom: none;
+border-top: solid black;
+padding:50px;
+}
+/* navBar */
+
+#filter {
+  display: flex; /* Use flexbox to align buttons in a row */
+  justify-content: center; /* Horizontally center the buttons */
+  margin-top: 20px;
+    }
+
+.btn {
+    width: 90px;
+  height: 60px;
+   border-radius: 10px;
+    cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 5px;
+}
+
+
+#virtue {
+  float: left;
+}
+
+#vice {
+  float: right;
+}
+.showAll {
+  color: black;
+  font-weight: 700;
+  transition: all 0.3s ease-in;
+}
+
+.showAll:hover {
+  background-color: #aeaeae;
+}
+
+.birds {
+  background-color: rgb(235, 255, 17);
+  color: rgb(82, 101, 21);
+  font-weight: 700;
+  transition: all 0.3s ease-in;
+}
+
+.birds:hover {
+  background-color: #bec100;
+}
+
+.mammals {
+  background-color: rgb(1, 235, 28);
+  color: rgb(0, 90, 0);
+  font-weight: 700;
+  transition: all 0.3s ease-in;
+}
+.mammals:hover {
+  background-color: rgb(0, 210, 0);
+}
+
+#filter .virtues {
+background-color: aqua;
+color: #02008c;
+font-weight: 700;
+}
+
+#filter .vices {
+background-color: 
+#fd4545;
+color: #fed0d0;
+font-weight: 700;
+}
 
 
 
+#virtue:hover {
+  background-color: #3ac3e9;
+  transition: all 0.3s ease-in;
+}
+
+#vice:hover {
+  background-color: rgb(193, 54, 54);
+  transition: all 0.3s ease-in;
+}
+
+#virtue.pressed {
+  color:white;
+  background-color: #3ac3e9;
+  text-decoration: underline;
+}
+
+#vice.pressed {
+  color:white;
+  background-color: rgb(193, 54, 54);
+  text-decoration: underline;
+}
+#birdsBirds.pressed {
+  color:white;
+  background-color: #bec100;
+  text-decoration: underline;
+}
+
+
+#mammalsMammals.pressed {
+  color:white;
+  background-color: rgb(0, 210, 0);
+  text-decoration: underline;
+}
+
+#allShow.pressed {
+    color:white;
+  background-color: #aeaeae;
+  
+}
+
+.pressed {
+  border-bottom: 2px solid black;
+}
 
 
 /* container and grid */
@@ -39,6 +162,7 @@ body {
     background-color: aqua;
     width: 360px;
 height: 510px;
+
 
 }
   
@@ -149,7 +273,7 @@ height: 510px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(255, 138, 4);
+    color: rgb(253, 171, 77);
     font-size: 3rem;
     text-align: center;
     opacity: 0;
@@ -201,6 +325,11 @@ height: 510px;
   .grid-container-vice .lazy {
     
     transition: opacity 10s ease-in-out;
+  }
+
+  footer {
+    width: auto;
+    height: 150px;
   }
   
 
